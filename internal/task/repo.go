@@ -1,6 +1,6 @@
 package task
 
-func InitTaskRepo() Repository {
+func InitTaskRepo() *TaskStore {
 	store := &TaskStore{}
 	store.tasks = make(map[int]Task)
 	store.nextId = 0
